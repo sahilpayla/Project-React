@@ -4,4 +4,4 @@
 
 My React Projects --->
 
-1. Dashboard - ReactJS
+1. CRUD Applications - ReactJS
