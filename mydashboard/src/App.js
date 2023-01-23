@@ -20,7 +20,7 @@ export default class App extends Component {
   }
 
   handleSubmit = async (event) => {
-    console.log(event.target.value)
+    // console.log(event.target.value)
     await this.setState({ Id: event.target.value, Data: this.state.Data })
     this.fetchData()
   }
