@@ -1,0 +1,44 @@
+.navbar {
+   width: 100%;
+   height: 100px;
+   color:color;
+   background-color: rgb(48, 48, 48);
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 1rem;
+   position: relative;
+}
+
+.navbar img {
+   width: 80px;
+   height: 80px;
+   border-radius: 1000px;
+}
+
+.nav-menu{
+   display: flex;
+}
+
+.nav-item{
+   padding:1rem;
+}
+
+.hamburger{
+   display: none;
+}
+
+@media screen and (max-width: 940px){
+   .nav-menu{
+      position:absolute;
+      left:0;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      background-color: lightblue;
+   }
+
+   .hamburger{
+      display: flex;
+   }
+}
