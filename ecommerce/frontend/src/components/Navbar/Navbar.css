@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Monoton&display=swap');
+
+
+
+.navbar{
+   font-family: 'Monoton', cursive;
+   background-color: rgb(255, 255, 255);
+   color: rgb(0, 0, 0);
+   box-shadow:0 2px 50px rgb(138, 138, 138);
+   font-weight: bold;
+   /* padding: 20px 0; */
+}
+.navbar-brand{
+   font-size: 30px;
+   font-weight: 10;
+   color: red;
+   letter-spacing: 4px;
+}
+.container-fluid{
+   display: flex;
+   justify-content: space-between;
+}
+.collapse.navbar-collapse{
+   display: flex;
+   width: max-content;
+   font-family:Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+   align-items: center;
+   justify-content:flex-end;
+}
+.nav-link{
+   color: black;
+}
