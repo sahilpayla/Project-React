@@ -55,10 +55,10 @@ const Footer = () => {
 
             <div className="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
                <p>
-               <a className="navbar-brand" href="/">
-                  <img src="https://logos-world.net/wp-content/uploads/2020/11/PlayStation-Logo.png" alt="" />
-               </a>
-               © 2023 Game Shopping Company, Inc. All rights reserved.</p>
+                  <a className="navbar-brand" href="/">
+                     <img src="https://logos-world.net/wp-content/uploads/2020/11/PlayStation-Logo.png" alt="" />
+                  </a>
+                  © 2023 Game Shopping Company, Inc. All rights reserved.</p>
             </div>
          </footer>
       </div>

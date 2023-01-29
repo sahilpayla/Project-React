@@ -4,13 +4,13 @@ const consoleData = [
       varients: ["small", "medium", "large"],
       prices: [
          {
-            small: 200,
-            medium: 350,
-            large: 450
+            small: 3471,
+            medium: 4150,
+            large: 5210
          }
       ],
       category: "nonveg",
-      image: "https://m.media-amazon.com/images/I/81AhbROHiHL._SL1500_.jpg",
+      image: "https://i5.walmartimages.ca/images/Large/642/639/6000202642639.jpg",
       description: "GTA V Console Game Disc"
    },
 
@@ -19,9 +19,9 @@ const consoleData = [
       varients: ["small", "medium", "large"],
       prices: [
          {
-            small: 200,
-            medium: 350,
-            large: 450
+            small: 3471,
+            medium: 4150,
+            large: 5210
          }
       ],
       category: "nonveg",
@@ -34,13 +34,13 @@ const consoleData = [
       varients: ["small", "medium", "large"],
       prices: [
          {
-            small: 200,
-            medium: 350,
-            large: 450
+            small: 3471,
+            medium: 4150,
+            large: 5210
          }
       ],
       category: "nonveg",
-      image: "https://zozila.com/wp-content/uploads/2021/01/F647F600-722B-4506-B09C-CFB34DD6E74A1.jpeg",
+      image: "https://m.media-amazon.com/images/I/81P3J994WKS._SX679_.jpg",
       description: "GTA V Console Game Disc"
    },
 
@@ -49,9 +49,9 @@ const consoleData = [
       varients: ["small", "medium", "large"],
       prices: [
          {
-            small: 200,
-            medium: 350,
-            large: 450
+            small: 3471,
+            medium: 4150,
+            large: 5210
          }
       ],
       category: "nonveg",
@@ -64,9 +64,9 @@ const consoleData = [
       varients: ["small", "medium", "large"],
       prices: [
          {
-            small: 200,
-            medium: 350,
-            large: 450
+            small: 3471,
+            medium: 4150,
+            large: 5210
          }
       ],
       category: "nonveg",
@@ -79,9 +79,9 @@ const consoleData = [
       varients: ["small", "medium", "large"],
       prices: [
          {
-            small: 200,
-            medium: 350,
-            large: 450
+            small: 3471,
+            medium: 4150,
+            large: 5210
          }
       ],
       category: "nonveg",
@@ -93,13 +93,13 @@ const consoleData = [
       varients: ["small", "medium", "large"],
       prices: [
          {
-            small: 200,
-            medium: 350,
-            large: 450
+            small: 3471,
+            medium: 4150,
+            large: 5210
          }
       ],
       category: "nonveg",
-      image: "https://m.media-amazon.com/images/I/81AhbROHiHL._SL1500_.jpg",
+      image: "https://i5.walmartimages.ca/images/Large/642/639/6000202642639.jpg",
       description: "GTA V Console Game Disc"
    },
 
@@ -108,9 +108,9 @@ const consoleData = [
       varients: ["small", "medium", "large"],
       prices: [
          {
-            small: 200,
-            medium: 350,
-            large: 450
+            small: 3471,
+            medium: 4150,
+            large: 5210
          }
       ],
       category: "nonveg",
@@ -123,13 +123,13 @@ const consoleData = [
       varients: ["small", "medium", "large"],
       prices: [
          {
-            small: 200,
-            medium: 350,
-            large: 450
+            small: 3471,
+            medium: 4150,
+            large: 5210
          }
       ],
       category: "nonveg",
-      image: "https://zozila.com/wp-content/uploads/2021/01/F647F600-722B-4506-B09C-CFB34DD6E74A1.jpeg",
+      image: "https://m.media-amazon.com/images/I/81P3J994WKS._SX679_.jpg",
       description: "GTA V Console Game Disc"
    },
 
@@ -138,9 +138,9 @@ const consoleData = [
       varients: ["small", "medium", "large"],
       prices: [
          {
-            small: 200,
-            medium: 350,
-            large: 450
+            small: 3471,
+            medium: 4150,
+            large: 5210
          }
       ],
       category: "nonveg",
@@ -153,9 +153,9 @@ const consoleData = [
       varients: ["small", "medium", "large"],
       prices: [
          {
-            small: 200,
-            medium: 350,
-            large: 450
+            small: 3471 ,
+            medium: 4150,
+            large: 5210
          }
       ],
       category: "nonveg",
@@ -168,9 +168,9 @@ const consoleData = [
       varients: ["small", "medium", "large"],
       prices: [
          {
-            small: 200,
-            medium: 350,
-            large: 450
+            small: 3471,
+            medium: 4150,
+            large: 5210
          }
       ],
       category: "nonveg",

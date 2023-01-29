@@ -7,8 +7,13 @@
 
 .w-100{
    /* border:1px solid lime; */
-   color: white;
+   color: rgb(0, 0, 0);
    text-align: center;
    font-weight: bold;
    padding-top: 20px;
+   /* border-radius: 40px; */
+   /* border: 1px solid lightgrey; */
 }
+/* .indexGameScreen{
+
+} */

@@ -1,19 +1,31 @@
 import { React, useState } from 'react';
 import data from '../consoledata';
 import './Game.css'
+import { Modal } from 'react-bootstrap';
+
 
 const Game = ({ game }) => {
 
 
    const [quantity, setQuantity] = useState(1)
    const [varient, setVarient] = useState('small')
+   const [show, setShow] = useState(false);
+
+
+   const handleClose = () => setShow(false);
+   const handleShow = () => setShow(true);
+
 
    return (
-      <>
+      <div style={{ margin: '70px 0' }} className='shadow-lg p-3 mb-3 bg-white rounded'>
+
+
          {/* name and image convention */}
-         <h1>{game.name}</h1>
-         <img src={game.image} className="img-fluid" alt=""
-            style={{ height: "450px", width: "350px" }} />
+         <div onClick={handleShow}>
+            <h1>{game.name}</h1>
+            <img src={game.image} className="img-fluid" alt=""
+               style={{ height: "450px", width: "350px" }} />
+         </div>
 
 
          {/* options size && Quantity */}
@@ -44,13 +56,36 @@ const Game = ({ game }) => {
 
          <div className="flex-container">
             <div className='ml-0'>
-               <h1>Price : {game.prices[0][varient] * quantity}</h1>
+               <h1>Price : ₹ {game.prices[0][varient] * quantity}</h1>
             </div>
             <div className=' '>
                <button className="btn">Add To Cart</button>
             </div>
          </div>
-      </>
+
+
+
+         {/* MODAL */}
+
+         <Modal show={show} onHide={handleClose}>
+            <Modal.Header closeButton>
+               <Modal.Title>{game.name}</Modal.Title>
+            </Modal.Header>
+
+            <Modal.Body style={{margin:"auto"}}>
+            <img src={game.image} className="img-fluid" alt="" style={{height:"300px", width:"250px"}}/>
+            <p>
+               <strong>{game.description}</strong>
+            </p>
+            </Modal.Body>
+
+            <Modal.Footer>
+               <button className="btn" onClick={handleClose}>CLOSE</button>
+            </Modal.Footer>
+         </Modal>
+
+
+      </div>
    )
 }
 

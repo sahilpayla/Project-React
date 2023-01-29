@@ -4,7 +4,7 @@ import Game from '../components/Game'
 import './HomePage.css'
 const HomePage = () => {
    return (
-      <div className='homee' style={{margin:"0 100px"}}>
+      <div >
          <div className="homepage-row">
 
             {data.map(game => {
