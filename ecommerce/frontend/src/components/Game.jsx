@@ -8,7 +8,7 @@ const Game = ({ game }) => {
 
 
    const [quantity, setQuantity] = useState(1)
-   const [varient, setVarient] = useState('small')
+   const [varient, setVarient] = useState('single')
    const [show, setShow] = useState(false);
 
 
