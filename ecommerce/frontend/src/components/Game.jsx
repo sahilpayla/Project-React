@@ -18,7 +18,7 @@ const Game = ({ game }) => {
 
          {/* options size && Quantity */}
          <div className="flex-container">
-            <div className="w-100">
+            <div className="w-100 m-1">
                <p>
                   Varients
                </p>
@@ -28,7 +28,7 @@ const Game = ({ game }) => {
                   })}
                </select>
             </div>
-            <div className="w-100">
+            <div className="w-100 m-1">
                <p>
                   Quantity
                </p>

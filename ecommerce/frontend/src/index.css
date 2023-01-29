@@ -15,7 +15,7 @@ code {
 }
 
 h1{
-  color: white;
+  color: rgb(0, 0, 0);
   text-align: center;
   padding: 20px 0;
   font-size: 20px !important;
@@ -28,5 +28,6 @@ h1{
 }
 
 select{
-  box-shadow: none;
+  box-shadow: none !important;
+  border-color: black !important;
 }

@@ -4,21 +4,26 @@
 
 .navbar{
    font-family: 'Monoton', cursive;
-   background-color: rgb(255, 255, 255);
-   color: rgb(58, 58, 58);
+   background-color:  #003791;
+   color: rgb(255, 255, 255);
    width: 100%;
    /* box-shadow:0 2px 50px rgb(255, 255, 255); */
    font-weight: bold;
    position: fixed;
    z-index: 9;
 }
+
 .navbar-brand{
-   font-size: 30px;
-   font-weight: 10;
-   color: rgb(0, 68, 255);
-   letter-spacing: 4px;
+   /* font-size: 30px; */
+   /* font-weight: 10; */
+   /* color: rgb(0, 68, 255); */
+   /* letter-spacing: 4px; */
    transition: 0.6s;
 }
+img{
+   width:80px;
+}
+
 .navbar-brand:hover{
    color: crimson;
    transform: skewX(-180deg);
@@ -36,5 +41,9 @@
    justify-content:flex-end;
 }
 .nav-link{
-   color: black;
+   font-size: 20px;
+   color: rgb(255, 255, 255);
+}
+.nav-link:hover{
+   color: rgb(121, 121, 121);
 }
