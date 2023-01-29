@@ -1,9 +1,12 @@
 import React from 'react'
 import '../Navbar/Navbar.css';
-
+import { useSelector, useDispatch } from 'react-redux';
 
 
 const Navbar = () => {
+
+   const cartstate = useSelector(state => state.cartReducer)
+
    return (
       // <div className='navbar'>
       <nav className="navbar navbar-expand-lg bg-body-tertiary">
@@ -18,7 +21,9 @@ const Navbar = () => {
                      <a className="nav-link" href="#">Login</a>
                   </li>
                   <li className="nav-item">
-                     <a className="nav-link" href="#">Cart</a>
+                     <a className="nav-link" href="#">
+                        Cart{cartstate.cartItems.length}
+                     </a>
                   </li>
                </ul>
             </div>

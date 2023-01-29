@@ -2,6 +2,9 @@ import { React, useState } from 'react';
 import data from '../consoledata';
 import './Game.css'
 import { Modal } from 'react-bootstrap';
+import { useSelector, useDispatch } from 'react-redux';
+import { addToCart } from '../actions/cartActions';
+
 
 
 const Game = ({ game }) => {
@@ -14,6 +17,14 @@ const Game = ({ game }) => {
 
    const handleClose = () => setShow(false);
    const handleShow = () => setShow(true);
+
+   const dispatch = useDispatch()
+   function addtocart()
+   {
+      dispatch(addToCart(game, quantity, varient ))
+   }
+
+
 
 
    return (
@@ -59,7 +70,7 @@ const Game = ({ game }) => {
                <h1>Price : ₹ {game.prices[0][varient] * quantity}</h1>
             </div>
             <div className=' '>
-               <button className="btn">Add To Cart</button>
+               <button className="btn" onClick={addtocart}>Add To Cart</button>
             </div>
          </div>
 
