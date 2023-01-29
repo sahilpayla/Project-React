@@ -13,8 +13,13 @@
 .navbar-brand{
    font-size: 30px;
    font-weight: 10;
-   color: red;
+   color: rgb(0, 68, 255);
    letter-spacing: 4px;
+   transition: 0.6s;
+}
+.navbar-brand:hover{
+   color: crimson;
+   letter-spacing: 10px;
 }
 .container-fluid{
    display: flex;

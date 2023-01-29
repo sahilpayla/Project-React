@@ -1,8 +1,6 @@
 import React from 'react'
 import '../Navbar/Navbar.css';
-<style>
-  @import url('https://fonts.googleapis.com/css2?family=Monoton&display=swap');
-</style>
+
 
 
 const Navbar = () => {

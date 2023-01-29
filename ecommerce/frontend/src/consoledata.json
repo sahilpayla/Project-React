@@ -1,0 +1,20 @@
+[
+   {
+   "name" : "GTA V",
+   "varients" : [
+      "small",
+      "medium",
+      "large"
+   ],
+   "prices":[
+      {
+         "small": 200,
+         "medium": 350,
+         "large": 450
+      }
+   ],
+   "category": "nonveg",
+   "image" : "",
+   "description" : ""
+   }
+]
