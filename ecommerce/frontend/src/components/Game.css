@@ -1,0 +1,14 @@
+
+.btn{
+   background-color: crimson !important;
+   /* border: 1px dotted rgb(137, 223, 0); */
+   color: white !important;
+ }
+
+.w-100{
+   /* border:1px solid lime; */
+   color: white;
+   text-align: center;
+   font-weight: bold;
+   padding-top: 20px;
+}

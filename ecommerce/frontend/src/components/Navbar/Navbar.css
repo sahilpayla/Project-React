@@ -5,10 +5,12 @@
 .navbar{
    font-family: 'Monoton', cursive;
    background-color: rgb(255, 255, 255);
-   color: rgb(0, 0, 0);
-   box-shadow:0 2px 50px rgb(138, 138, 138);
+   color: rgb(58, 58, 58);
+   width: 100%;
+   /* box-shadow:0 2px 50px rgb(255, 255, 255); */
    font-weight: bold;
-   /* padding: 20px 0; */
+   position: fixed;
+   z-index: 9;
 }
 .navbar-brand{
    font-size: 30px;
@@ -19,7 +21,8 @@
 }
 .navbar-brand:hover{
    color: crimson;
-   letter-spacing: 10px;
+   transform: skewX(-180deg);
+   /* letter-spacing: 50px; */
 }
 .container-fluid{
    display: flex;
