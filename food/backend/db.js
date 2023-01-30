@@ -12,7 +12,7 @@ const MongoDB = async () => {
          const fetchedData = await mongoose.connection.db.collection("IPhone_Macs");
          fetchedData.find({}).toArray(function (err, data) {
             if (!err) {
-               console.log(data);
+               // console.log(data);
             }
             else {
                console.log(err)
