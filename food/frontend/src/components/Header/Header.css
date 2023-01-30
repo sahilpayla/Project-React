@@ -1,0 +1,27 @@
+.navbar-brand-image {
+   width: 5%;
+   /* background-color: red; */
+}
+
+.navbar-brand-image img {
+   width: 50%;
+}
+
+.navbar {
+   width: 100%;
+   color: black;
+   height: 60px;
+   z-index: 100;
+   /* padding: 140px 0; */
+   /* background-color: rgb(46, 37, 37); */
+}
+
+.container-fluid {
+   /* padding: 40px 0; */
+   position: fixed;
+   background-color:rgb(255, 255, 255);
+   z-index: 99;
+}
+.nav-link{
+   color: black;
+}
