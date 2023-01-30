@@ -10,7 +10,7 @@ export default function Card() {
            
             <div class="card-body">
                <h5 class="card-title">Iphone 14</h5>
-               <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+               <p class="card-text">iPhone 14 has the same super-speedy chip that's in iPhone 13 Pro. A15 Bionic, with a 5-core GPU, powers all the latest features and makes graphically intense games and AR apps feel ultra fluid. An updated internal design delivers better thermal efficiency, so you can stay in the action longer.</p>
 
                <div className="container w-100">
                   <select className='m-1 w-100 h-100 rounded'>
@@ -24,8 +24,10 @@ export default function Card() {
                   </select>
 
                   <select className='m-1 w-100 h-100 rounded'>
-                     <option value="half">Without Accessories </option>
-                     <option value="full">With Accessories </option>
+                     <option value="half">128 GB</option>
+                     <option value="full">256 GB </option>
+                     <option value="semifull">512 GB </option>
+                     <option value="superfull">1 TB </option>
                   </select>
 
 
