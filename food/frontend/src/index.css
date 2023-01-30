@@ -11,3 +11,12 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+#slider{
+  max-height: 500px;
+}
+img{
+  object-fit: contain;
+  object-position: center;
+  width: 100%;
+}

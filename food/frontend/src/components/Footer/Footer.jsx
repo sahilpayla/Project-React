@@ -4,7 +4,7 @@ import './Footer.css';
 const Footer = () => {
    return (
 
-      <div className="container">
+      <div className="footerContainer">
          <footer className="py-5">
             <div className="row">
                <div className="col-6 col-md-2 mb-3">
@@ -58,7 +58,7 @@ const Footer = () => {
                   {/* <a className="navbar-brand" href="/">
                      <img src="https://logos-world.net/wp-content/uploads/2020/11/PlayStation-Logo.png" alt="" />
                   </a> */}
-                  © 2023 Game Shopping Company, Inc. All rights reserved.</p>
+                  © 2023 Food Company, Inc. All rights reserved.</p>
             </div>
          </footer>
       </div>
