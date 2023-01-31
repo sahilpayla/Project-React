@@ -6,7 +6,7 @@ import './Header.css'
 const Header = () => {
    return (
 
-      <nav className="navbar navbar-expand-lg navbar-light">
+      <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
          <div className="container-fluid">
             <Link className="navbar-brand-image" to="/">
                <img src="https://www.freeiconspng.com/uploads/restaurant-icon-png-plate-1.png"  alt="Restaurant Icon Png Plate"/>
@@ -20,13 +20,13 @@ const Header = () => {
             <div className="collapse navbar-collapse" id="navbarNav">
                <ul className="navbar-nav">
                   <li className="nav-item">
-                     <Link className="nav-link" to="/">Home</Link>
+                     <Link className="nav-link text-white" to="/">Home</Link>
                   </li>
                   <li className="nav-item">
-                     <Link className="nav-link" to="/login">Login</Link>
+                     <Link className="nav-link text-white" to="/login">Login</Link>
                   </li>
                   <li className="nav-item">
-                     <Link className="nav-link" to="/createuser">SignUp</Link>
+                     <Link className="nav-link text-white" to="/createuser">SignUp</Link>
                   </li>
                </ul>
             </div>

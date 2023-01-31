@@ -9,17 +9,26 @@
 
 .navbar {
    width: 100%;
-   color: black;
+   color: rgb(255, 255, 255);
    /* height: 60px; */
    z-index: 100;
    background-color: rgb(46, 37, 37);
 }
 
+.nav-link {
+   transition: 0.2s all ease-in-out;
+}
+
+.nav-link:hover {
+   border-bottom: 1px solid rgba(255, 255, 255, 0.596);
+}
+
 .container-fluid {
-   padding-top: 30px ;
+   padding-top: 30px;
+   color: white;
    padding-bottom: 10px;
    margin-top: 20px;
    position: fixed;
-   background-color:rgb(245, 245, 245);
+   background: linear-gradient(rgb(255, 78, 113), crimson, crimson);
    z-index: 99;
 }
