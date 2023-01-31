@@ -1,9 +1,9 @@
 import React, { useState } from 'react'
-import { Link } from 'react-router-dom'
-
+import { useNavigate, Link } from 'react-router-dom'
 
 export default function Signup() {
 
+   let navigate = useNavigate();
 
    const [credentials, setCredentials] = useState({
       name: "",
@@ -27,11 +27,18 @@ export default function Signup() {
             location: credentials.geolocation
          })
       });
-      const json=await response.json()
+      const json = await response.json()
       console.log(json);
 
-      if(!json.success) {
+      if (!json.success) {
          alert("Enter Valid Credentials")
+      }
+
+      // navigation to main page after login 
+      if (json.success) {
+         localStorage.setItem("authToken", json.authToken)
+         console.log(localStorage.getItem("authToken"))
+         navigate('/login')
       }
 
    }

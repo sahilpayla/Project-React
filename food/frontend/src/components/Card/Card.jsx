@@ -9,11 +9,11 @@ export default function Card(props) {
 
 
    return (
-      <div>
-         <div className="card mt-3" style={{ "width": "18rem", "maxHeight": "360px" }}>
+      <div >
+         <div className="card mt-3" style={{"padding":"10px", "width": "18rem", "maxHeight": "360px" }}>
             <img src={props.imgSrc}
                className="card-img-top" 
-               style={{height:"150px"}}
+               style={{height:"150px", objectFit:"cover"}}
                alt="..." />
            
            
@@ -21,7 +21,7 @@ export default function Card(props) {
                <h5 className="card-title">{props.name} </h5>
                {/* <p className="card-text" style={{fontSize:"10px"}}>{props.desc} </p> */}
 
-               <div className="container w-100">
+               <div className="container w-100" >
                   <select className='m-1 w-100 h-100 rounded'>
                      {Array.from(Array(6), (e, i) => {
                         return (
