@@ -56,19 +56,19 @@ const Home = () => {
 
 
                   <div className="carousel-item active">
-                     <img src="https://images.macrumors.com/t/eBKCCW-zZ7naZ5jkxwMwBOHucho=/1600x0/article-new/2019/03/Upcoming-Products-2022-Feature.jpg"
+                     <img src="https://im1.dineout.co.in/images/uploads/restaurant/sharpen/1/z/t/p18198-15372735995ba0eeff0c446.jpg?tr=tr:n-xlarge"
                         className="d-block w-100"
-                        style={{ filter: "brightness(20%)" }}
+                        style={{ filter: "brightness(50%)" }}
                         alt="..." />
                   </div>
                   <div className="carousel-item">
-                     <img src="https://images.macrumors.com/t/RZ3j1zy0ObAq2O6OBwIascckuQg=/2500x/article-new/2019/02/Upcoming-Apple-Products-Guide-2023-Feature.jpg" className="d-block w-100"
-                        style={{ filter: "brightness(20%)" }}
+                     <img src="https://res.cloudinary.com/purnesh/image/upload/f_auto/v1532936205/verandah0.jpg" className="d-block w-100"
+                        style={{ filter: "brightness(50%)" }}
                         alt="..." />
                   </div>
                   <div className="carousel-item">
-                     <img src="https://m-cdn.phonearena.com/images/article/98169-wide-two_1200/Apple-iPhone-history-the-evolution-of-the-smartphone-that-started-it-all.jpg"
-                        style={{ filter: "brightness(20%)" }}
+                     <img src="https://im1.dineout.co.in/images/uploads/restaurant/sharpen/1/j/f/p112248-167307464263b917d23cc24.jpg?w=400"
+                        style={{ filter: "brightness(50%)" }}
                         alt="..." />
                   </div>
                </div>
