@@ -10,13 +10,19 @@ const MongoDB = async () => {
       if (!err) {
          console.log('Connected...');
          const fetchedData = await mongoose.connection.db.collection("IPhone_Macs");
-         fetchedData.find({}).toArray(function (err, data) {
-            if (!err) {
-               // console.log(data);
-            }
-            else {
-               console.log(err)
-            }
+         fetchedData.find({}).toArray(async function (err, data) {
+
+            // display the apple items here
+            const phoneCategory = await mongoose.connection.db.collection("Product_Category");
+            phoneCategory.find({}).toArray(async function (err, catData) {
+               if (!err) {
+                  global.Iphone_Macs = data;
+                  global.Product_Category = catData;
+               }
+               else {
+                  console.log(err)
+               }
+            })
          })
       }
       else {
