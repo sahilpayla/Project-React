@@ -11,7 +11,9 @@ const Header = () => {
             <Link className="navbar-brand-image" to="/">
                <img src="https://images.ctfassets.net/9mt4r6ro1ay9/4sZ8eIRj8syEOCoqsEkCcy/7ad6202bea061f90fc4ac27db407a7b1/apple_logo.png" alt="" />
             </Link>
-            <Link className="navbar-brand" to="/">Apple Store</Link>
+            <Link className="navbar-brand" to="/">
+               Niya Cafe
+            </Link>
             <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                <span className="navbar-toggler-icon"></span>
             </button>
