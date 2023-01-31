@@ -9,7 +9,7 @@ const Header = () => {
       <nav className="navbar navbar-expand-lg navbar-light">
          <div className="container-fluid">
             <Link className="navbar-brand-image" to="/">
-               <img src="https://images.ctfassets.net/9mt4r6ro1ay9/4sZ8eIRj8syEOCoqsEkCcy/7ad6202bea061f90fc4ac27db407a7b1/apple_logo.png" alt="" />
+               <img src="https://www.freeiconspng.com/uploads/restaurant-icon-png-plate-1.png"  alt="Restaurant Icon Png Plate"/>
             </Link>
             <Link className="navbar-brand" to="/">
                Niya Cafe
