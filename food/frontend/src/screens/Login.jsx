@@ -1,9 +1,11 @@
 import React, { useState } from 'react'
-import { Link } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 
 
 
 const Login = () => {
+
+  let navigate = useNavigate();
 
   const [credentials, setCredentials] = useState({
     email: "",
@@ -13,7 +15,7 @@ const Login = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    const response = await fetch("http://localhost:8000/api/createuser", {
+    const response = await fetch("http://localhost:8000/api/loginuser", {
       method: "POST",
       headers: {
         'Content-Type': 'application/json'
@@ -29,6 +31,14 @@ const Login = () => {
     if (!json.success) {
       alert("Enter Valid Credentials")
     }
+
+    // navigation to main page after login 
+    if (json.success) {
+      localStorage.setItem("authToken", json.authToken)
+      console.log(localStorage.getItem("authToken"))
+      navigate('/')
+    }
+    
 
   }
 
