@@ -9,7 +9,7 @@
 
 .navbar {
    width: 100%;
-   color: rgb(255, 255, 255);
+   /* color: rgb(255, 255, 255); */
    /* height: 60px; */
    z-index: 100;
    background-color: rgb(46, 37, 37);
@@ -25,10 +25,14 @@
 
 .container-fluid {
    padding-top: 30px;
-   color: white;
+   /* color: white; */
    padding-bottom: 10px;
    margin-top: 20px;
    position: fixed;
    background:linear-gradient(rgb(3, 77, 161) ,rgb(0, 119, 255));
    z-index: 99;
+}
+
+.badge{
+   background-color: rgb(12, 173, 47);
 }

@@ -8,7 +8,7 @@ const Home = () => {
 
    const [productCat, setProductCat] = useState([]);
    const [product, setProduct] = useState([]);
-   const [search, setSearch] = useState("")
+   const [search, setSearch] = useState("");
 
    const loadData = async () => {
       let response = await fetch("http://localhost:8000/api/phonedata", {
@@ -100,13 +100,11 @@ const Home = () => {
                         {product !== [] ?
                            product.filter((item) => (item.CategoryName === data.CategoryName)
                               && (item.name.toLowerCase().includes(search.toLocaleLowerCase())))
-                              .map(appleProducts => {
+                              .map(filterItems => {
                                  return (
-                                    <div key={appleProducts._id} className="col-12 col-md-6 col-lg-3">
-                                       <Card name={appleProducts.name}
-                                          options={appleProducts.options[0]}
-                                          imgSrc={appleProducts.img}
-                                          desc={appleProducts.description}
+                                    <div key={filterItems._id} className="col-12 col-md-6 col-lg-3">
+                                       <Card foodItem={filterItems}
+                                          options={filterItems.options[0]}
                                        ></Card>
                                     </div>
                                  )

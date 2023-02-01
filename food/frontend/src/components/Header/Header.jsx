@@ -1,9 +1,14 @@
-import React from 'react'
-import { Link, useNavigate } from 'react-router-dom'
-import './Header.css'
 
+import './Header.css'
+import React, { useState } from 'react'
+import { Link, useNavigate } from "react-router-dom";
+import { useCart } from '../contextReducer';
+import Modal from '../../Modal';
+import Cart from "../../screens/Cart";
 
 const Header = () => {
+   let data = useCart();
+   const [cartView, setCartView] = useState(false)
 
    let navigate = useNavigate();
 
@@ -46,14 +51,19 @@ const Header = () => {
                {
                   (!localStorage.getItem("authToken")) ?
                      <div className='d-flex'>
-                        <Link className="btn bg-white mx-2" to="/login">Login</Link>
-                        <Link className="btn bg-white mx-2" to="/createuser">SignUp</Link>
+                        <Link className="btn bg-white mx-2" to="/login">Login ___<span><i class="fa-solid fa-pen"></i></span></Link>
+                        <Link className="btn bg-white mx-2" to="/createuser">SignUp <span><i class="fa-solid fa-user-plus"></i></span></Link>
                      </div>
                      :
                      <div>
-                        <div className="btn bg-white mx-2">
-                          My Cart <span><i class="fa-solid fa-cart-shopping"></i></span>
+                        <div className="btn bg-white mx-2" onClick={() => { setCartView(true) }}>
+                           My Cart  {"  "}
+                           {/* <span><i class="fa-solid fa-cart-shopping"></i></span> */}
+                           <div className='badge'>{data.length}</div>
                         </div>
+
+                        {cartView ? <Modal onClose={() => setCartView(false)}><Cart></Cart></Modal> : ""}
+
                         <div className="btn bg-danger text-white mx-2" onClick={handleLogout}>
                            Logout <span><i class="fa-solid fa-person-falling"></i></span>
                         </div>
