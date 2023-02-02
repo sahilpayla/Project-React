@@ -20,7 +20,7 @@
 }
 .btn:hover {
    transition: 0.6s;
-   border-radius: 20px;
+   border-radius: 30px;
 }
 
 .container-fluid {
