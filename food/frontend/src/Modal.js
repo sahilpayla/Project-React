@@ -5,10 +5,11 @@ const MODAL_STYLES = {
   position: 'fixed',
   top: '50%',
   left: '50%',
-  backgroundColor: 'rgb(34,34,34)',
+  backgroundColor: "#000000b5",
   transform: 'translate(-50%, -50%)',
   zIndex: 1000,
   height: '90%',
+  color:"white",
   width: '90%'
 }
 

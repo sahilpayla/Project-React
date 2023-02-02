@@ -47,15 +47,15 @@ export default function Cart() {
 
          {console.log(data)}
          <div className='container m-auto mt-5 table-responsive  table-responsive-sm table-responsive-md' >
-            <table className='table table-hover '>
-               <thead className=' text-success fs-4'>
+            <table className='table table-dark'>
+               <thead className=' text-white fs-4'>
                   <tr>
                      <th scope='col' >#</th>
                      <th scope='col' >Name</th>
                      <th scope='col' >Quantity</th>
                      <th scope='col' >Option</th>
                      <th scope='col' >Amount</th>
-                     <th scope='col' ></th>
+                     <th scope='col' >X </th>
                   </tr>
                </thead>
                <tbody>
@@ -66,20 +66,22 @@ export default function Cart() {
                         <td>{food.qty}</td>
                         <td>{food.size}</td>
                         <td>{food.price}</td>
-                        
-                        {/* <td >
+
+                        <td >
                            <button type="button" className="btn p-0">
-                              <Delete onClick={() => { dispatch({ type: "REMOVE", index: index }) }} ></Delete>
+                              <span style={{color: "red"}} onClick={() => { dispatch({ type: "REMOVE", index: index }) }}>
+                              X
+                              </span>
                            </button>
-                        </td> */}
-                        
+                        </td>
+
                      </tr>
                   ))}
                </tbody>
             </table>
             <div><h1 className='fs-2'>Total Price: {totalPrice}/-</h1></div>
             <div>
-               <button className='btn bg-success mt-5 ' onClick={handleCheckOut} > Check Out </button>
+               <button className='btn bg-success text-white mt-5 ' onClick={handleCheckOut} > Check Out </button>
             </div>
          </div>
 
