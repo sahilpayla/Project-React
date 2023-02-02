@@ -20,3 +20,7 @@ img{
   object-position: center;
   width: 100%;
 }
+
+label.form-label{
+  color: white;
+}

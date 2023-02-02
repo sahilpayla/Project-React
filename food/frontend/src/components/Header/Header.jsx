@@ -41,7 +41,7 @@ const Header = () => {
                   {
                      (localStorage.getItem("authToken")) ?
                         <li className="nav-item">
-                           <Link className="nav-link text-white" to="/">My Orders</Link>
+                           <Link className="nav-link text-white" to="/myorder">My Orders</Link>
                         </li>
                         : ""
                   }
