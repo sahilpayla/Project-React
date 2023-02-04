@@ -4,7 +4,7 @@ import './Chef.css';
 
 const Chef = () => (
   <div>
-    Chef
+  
   </div>
 );
 
