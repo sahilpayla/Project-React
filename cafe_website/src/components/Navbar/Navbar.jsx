@@ -34,7 +34,7 @@ const Navbar = () => {
         {toggleMenu && (
           <div className="app__navbar-smallscreen_overlay flex__center slide-bottom">
             <span fontSize={27} className="overlay__close" onClick={() => setToggleMenu(false)} >
-              . . . X
+              X
             </span>
             <ul className="app__navbar-smallscreen-links">
               <li className="p__opensans"><a href="#home">Home</a></li>
