@@ -1,4 +1,4 @@
-import { ADD_TO_CART, CHANGE_ORDER_CART, CHANGE_QUANTITY, ADD_ADDRESS } from "../actions";
+import { ADD_TO_CART, CHANGE_ORDER_CART, CHANGE_QUANTITY, ADD_ADDRESS, SET_SHIP_ADDRESS, PLACE_ORDER, EMPTY_CART } from "../actions";
 
 const initialStateProducts = {
    products: [
@@ -91,6 +91,7 @@ const initialStateUser = {
          country: "INDIA"
       },
    ],
+   orders: [],
 }
 
 
@@ -112,6 +113,9 @@ const cartReducer = (state = initialStateCart, action) => {
          const newItems = [...state.items];
          newItems[index] = action.payload;
          return { ...state, items: newItems };
+      
+      case EMPTY_CART:
+         return {...state, items: []};
 
       default:
          return state;
@@ -125,6 +129,9 @@ const orderReducer = (state = initialStateOrder, action) => {
          const total_items = items.reduce((total, item) => total + (item.quantity * 1), 0);
          const total_cost = items.reduce((total, item) => total + item.price * item.quantity, 0);
          return { ...state, items: action.payload, total_cost, total_items }
+
+      case SET_SHIP_ADDRESS:
+         return { ...state, shipping_address: action.payload }
       default:
          return state;
    }
@@ -134,6 +141,8 @@ const userReducer = (state = initialStateUser, action) => {
    switch (action.type) {
       case ADD_ADDRESS:
          return { ...state, addresses: [...state.addresses, action.payload] }
+      case PLACE_ORDER:
+         return { ...state, orders: [...state.orders, action.payload] }
       default:
          return state;
    }

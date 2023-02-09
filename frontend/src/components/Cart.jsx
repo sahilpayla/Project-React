@@ -63,7 +63,7 @@ const Cart = ({ items, order ,changeQuantity}) => {
                   </div>
                   <div className="d-flex flex-row justify-content-between p-2">
                      <span className="billing-item fs-5">Total</span>
-                     <span className="billing-cost fs-5">${order.total_cost - order.total_cost*order.discount_in_percent/100 + order.shipping_charge}</span>
+                     <span className="billing-cost fs-5">${order.total_cost - order.total_cost*order.discount_in_percent/100 + order.shipping_charges}</span>
                   </div>
 
                   <div className="d-flex mt-3">

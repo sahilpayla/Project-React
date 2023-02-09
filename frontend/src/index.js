@@ -9,6 +9,7 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import HomePage from './pages/HomePage';
 import CartPage from './pages/CartPage';
 import CheckoutPage from './pages/CheckoutPage';
+import OrdersPage from './pages/OrdersPage';
 
 const store = configureStore({
   reducer: {
@@ -30,6 +31,7 @@ root.render(
           <Route index element={<HomePage />}></Route>
           <Route exact path='cart' element={<CartPage />}></Route>
           <Route exact path='checkout' element={<CheckoutPage />}></Route>
+          <Route exact path='myorders' element={<OrdersPage />}></Route>
         </Routes>
       </BrowserRouter>
     </Provider>

@@ -17,10 +17,11 @@ body{
      margin: auto;
      margin-bottom: 2rem;
      cursor: pointer;
+     transition: 0.2s;
  }
  
  .product-item:hover{
-     transform: scale(1.1);
+    box-shadow: 0px 1px 12px rgb(65, 65, 65);
  }
  .product-item img{  
        /* max-height: 200px; */
@@ -156,7 +157,7 @@ body{
  }
  .liked:hover{
      color: red;
-     opacity: 1;
+     opacity: 0.6;
  }
  .subscribe input, .subscribe button{
   border-radius: 0;
