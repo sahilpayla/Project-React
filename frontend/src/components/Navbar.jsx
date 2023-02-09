@@ -26,7 +26,7 @@ const Navbar = ({ cartCount }) => {
                 </ul>
               </li>
               <li className="nav-item">
-                <Link className="nav-link" to="/cart" tabindex="-1">
+                <Link className="nav-link" to="/cart" tabIndex="-1">
                   Cart<i className="bi bi-cart-plus-fill"></i>
                   <span className="cart-badge badge bg-success">{cartCount}</span></Link>
               </li>

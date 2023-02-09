@@ -1,4 +1,4 @@
-import { ADD_TO_CART, CHANGE_ORDER_CART, CHANGE_QUANTITY } from "../actions";
+import { ADD_TO_CART, CHANGE_ORDER_CART, CHANGE_QUANTITY, ADD_ADDRESS } from "../actions";
 
 const initialStateProducts = {
    products: [
@@ -59,13 +59,39 @@ const initialStateCart = {
 
 const initialStateOrder = {
    items: [],
-   shipping_charge: 50,
+   shipping_charges: 50,
    discount_in_percent: 10,
    shipping_address: '',
    total_items: 0,
-   total_cost:0
+   total_cost: 0
 }
 
+const initialStateUser = {
+   name: 'john',
+   email: "mail",
+   addresses: [
+      {
+         first_name: "he",
+         last_name: "hee",
+         address1: "123",
+         address2: "road",
+         phone: "7418529630",
+         pincode: 110022,
+         state: "delhi",
+         country: "INDIA"
+      },
+      {
+         first_name: "she",
+         last_name: "shee",
+         address1: "123",
+         address2: "road",
+         phone: "8418529630",
+         pincode: 110022,
+         state: "delhi",
+         country: "INDIA"
+      },
+   ],
+}
 
 
 const productReducer = (state = initialStateProducts, action) => {
@@ -96,17 +122,18 @@ const orderReducer = (state = initialStateOrder, action) => {
    switch (action.type) {
       case CHANGE_ORDER_CART:
          const items = action.payload;
-         const total_items = items.reduce((total, item) => total+(item.quantity*1), 0);
-         const total_cost = items.reduce((total, item) => total+item.price*item.quantity, 0);
-         return { ...state, items: action.payload , total_cost, total_items}
+         const total_items = items.reduce((total, item) => total + (item.quantity * 1), 0);
+         const total_cost = items.reduce((total, item) => total + item.price * item.quantity, 0);
+         return { ...state, items: action.payload, total_cost, total_items }
       default:
          return state;
    }
 }
 
-const userReducer = (state = initialStateOrder, action) => {
+const userReducer = (state = initialStateUser, action) => {
    switch (action.type) {
-      // case ADD_USER:
+      case ADD_ADDRESS:
+         return { ...state, addresses: [...state.addresses, action.payload] }
       default:
          return state;
    }
@@ -114,4 +141,4 @@ const userReducer = (state = initialStateOrder, action) => {
 
 
 
-export { productReducer, cartReducer, orderReducer , userReducer}; 
+export { productReducer, cartReducer, orderReducer, userReducer }; 

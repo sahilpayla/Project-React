@@ -4,8 +4,8 @@ import './index.css';
 import App from './App';
 import { configureStore } from '@reduxjs/toolkit'
 import { Provider } from 'react-redux';
-import { cartReducer, orderReducer, productReducer } from './reducers';
-import {BrowserRouter, Route, Routes} from 'react-router-dom'
+import { cartReducer, orderReducer, productReducer, userReducer } from './reducers';
+import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import HomePage from './pages/HomePage';
 import CartPage from './pages/CartPage';
 import CheckoutPage from './pages/CheckoutPage';
@@ -14,7 +14,8 @@ const store = configureStore({
   reducer: {
     product: productReducer,
     cart: cartReducer,
-    order: orderReducer
+    order: orderReducer,
+    user: userReducer
   }
 })
 
