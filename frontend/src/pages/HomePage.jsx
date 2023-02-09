@@ -21,7 +21,7 @@ const HomePage = () => {
    return (
       <>
          <Navbar cartCount={cartItems.length}/>
-         <Slider />
+         {/* <Slider /> */}
          <ProductPage products={products} addToCart={addToCart}></ProductPage>
          <Footer />
       </>

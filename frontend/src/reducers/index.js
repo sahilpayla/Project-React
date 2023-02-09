@@ -104,6 +104,14 @@ const orderReducer = (state = initialStateOrder, action) => {
    }
 }
 
+const userReducer = (state = initialStateOrder, action) => {
+   switch (action.type) {
+      // case ADD_USER:
+      default:
+         return state;
+   }
+}
 
 
-export { productReducer, cartReducer, orderReducer }; 
+
+export { productReducer, cartReducer, orderReducer , userReducer}; 

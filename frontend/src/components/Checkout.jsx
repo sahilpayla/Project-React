@@ -31,12 +31,19 @@ const Checkout = ({ order }) => {
                               <h6 class="my-0">Total</h6>
                               <small class="text-muted">Shipping Charges</small>
                            </div>
-                           <span class="text-muted">${order.total_cost}</span>
+                           <span class="text-muted">${order.shipping_charge}</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between lh-sm">
+                           <div>
+                              <h6 class="my-0">Total</h6>
+                              <small class="text-muted">Discount</small>
+                           </div>
+                           <span class="text-muted"> - ${order.total_cost * order.discount_in_percent / 100}</span>
                         </li>
 
                         <li class="list-group-item d-flex justify-content-between">
                            <span>Total (USD)</span>
-                           <strong>${order.total_cost}</strong>
+                           <strong>${order.total_cost - order.total_cost * order.discount_in_percent / 100 + order.shipping_charge}</strong>
                         </li>
                      </ul>
 
