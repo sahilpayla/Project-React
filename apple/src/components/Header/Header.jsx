@@ -6,7 +6,9 @@ const Header = () => {
    return (
       <>
          <div className="header">
-            <div className="header-points">Logo</div>
+            <div className="header-points">
+               <i class="fa-brands fa-apple" style={{fontSize:"16px"}}></i>
+            </div>
             <div className="header-points">Store</div>
             <div className="header-points">Mac</div>
             <div className="header-points">iPad</div>
@@ -17,10 +19,14 @@ const Header = () => {
             <div className="header-points">Entertaiment</div>
             <div className="header-points">Accessories</div>
             <div className="header-points">Support</div>
-            <div className="header-points">Search</div>
-            <div className="header-points">Bag</div>
+            <div className="header-points">
+               <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+            <div className="header-points">
+            <i class="fa-solid fa-bag-shopping"></i>
+            </div>
          </div>
-         
+
       </>
    )
 }
