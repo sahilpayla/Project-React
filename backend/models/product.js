@@ -6,21 +6,31 @@ const productSchema = new mongoose.Schema({
       required: true,
       unique: true,
    },
-   email: {
+   desc: {
       type: String,
       required: true,
-      unique: true,
+      min: 8,
    },
-   password: {
+   price: {
+      type: Number,
+      required: true,
+      min:6,
+      max:20,
+   },
+   img: {
       type: String,
       required: true,
       min:6,
       max:20,
    },
-   isAdmin: {
-      type:Boolean,
-      default:false,
-   }
+   review: {
+      type: Number,
+      required: true,
+   },
+   Category: {
+      type: String,
+      required: true,
+   },
 })
 
 module.export = mongoose.model('products', productSchema);
