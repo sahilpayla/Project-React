@@ -4,7 +4,7 @@ const port = 8000;
 const mongoose = require('mongoose');
 const cors = require('cors');
 const authController = require('./controllers/authController.js');
-
+const productController = require('./controllers/productController.js')
 
 // database
 mongoose.set('strictQuery', false);
@@ -20,6 +20,7 @@ app.use(cors())
 app.use(express.json())
 app.use(express.urlencoded({extended: true}))
 app.use('/auth', authController)
+app.use('/product', productController)
 
 
 // server
