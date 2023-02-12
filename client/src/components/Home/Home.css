@@ -1,0 +1,52 @@
+.home-container{
+   width: 100%;
+}
+.home-deliveryInfos{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+.home-titles{
+   display: flex;
+   gap:8px;
+   margin-top: 6rem;
+   margin-bottom: 2rem;
+   flex-direction: column;
+   justify-content: center;
+}
+.home-deliverySubtitle{
+   text-align: center;
+   font-size: 20px;
+   color: #666;
+}
+.home-deliveryTitle{
+   text-align: center;
+   color: crimson;
+   font-size: 28px;
+   font-weight: bold;
+}
+.home-deliveryInfo{
+   display: flex;
+   flex: 1;
+   justify-content: center;
+   gap:12px;
+   align-items: center;
+   text-align: center;
+   flex-direction: column;
+}
+.home-deliveryInfo > h3 {
+   text-align: center;
+   color: #333;
+   font-size: 24px;
+   font-weight: bold;
+}
+.home-firstImg{
+   width: 275px;
+}
+.home-secondImg{
+   width: 250px;
+   margin-bottom: -1.5rem;
+}
+.home-thirdImg{
+   width: 240px;
+}
