@@ -25,8 +25,13 @@ const Login = () => {
           'Content-Type' : 'application/json'
         },
         method: "POST",
-        body: JSON.string
+        body: JSON.stringify({email, password})
       }) 
+
+      const data = await res.json();
+      dispatch(login(data));
+      navigate('/')
+
     }
     catch (error) {
       setError(true)
