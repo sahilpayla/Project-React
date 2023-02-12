@@ -1,0 +1,98 @@
+section{
+   /* background-color: rgba(0, 247, 255, 0.486); */
+   /* height: 100vh; */
+}
+.hero-container {
+   height: calc(100vh - 60px);
+   width: 100%;
+   margin-top: 5.5rem;
+   /* margin-bottom: -5.5rem; */
+}
+.hero-title{
+   font-size: 46px;
+   font-weight: bold;
+   color: crimson;
+   margin-bottom: 30px;
+   white-space: nowrap;
+}
+.hero-firstmsg{
+   font-size: 32px;
+   /* margin-bottom: 24px; */
+}
+.hero-firstmsg > span{
+   font-weight: bold;
+   color: crimson;
+   font-size: 26px;
+}
+.hero-secondmsg{
+   font-size: 26px;
+}
+.hero-secondmsg > span {
+   font-weight: bold;
+   color: crimson;
+}
+.hero-desc{
+   color: grey;
+   font-size: 18px;
+   font-weight: 300;
+   /* margin-top: 50px; */
+   max-width: 350px;
+   line-height: 20px;
+}
+.hero-wrapper{
+   height: 100%;
+   width: 85%;
+   margin: 0 auto;
+   gap: 15rem;
+   display: flex;
+   justify-content: center;
+}
+.hero-left{
+   flex-direction: column;
+   display: flex;
+   align-items: flex-start;
+   flex: 1;
+   /* margin-top: 2rem; */
+}
+.hero-right{
+   flex:1;
+
+}
+.hero-manEatingImg{
+   /* height: 85%; */
+   width: 100%;
+   object-fit: cover;
+}
+.hero-right img{
+   width:110%;
+   height: 80vh;
+}
+.hero-button{
+   gap: 12px;
+   display: flex;
+   align-items: center;
+   margin-top: 4rem;
+}
+.hero-button > button{
+   outline:none;
+   color: white;
+   font-size: 15px;
+   cursor: pointer;
+   border-radius: 8px;
+   background-color: red;
+   padding: 0.5rem 1.25rem;
+   transition: 150ms all;
+   border: 1px solid transparent;
+}
+.hero-button > button:hover{
+   border-color: red;
+   background-color: white;
+   color: red;
+}
+.hero-buttonSee > a{
+   display: flex;
+   align-items: center;
+   gap: 8px;
+   color: inherit;
+   text-decoration: none;
+}

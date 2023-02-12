@@ -1,0 +1,13 @@
+.footer-container {
+   width: 100%;
+   padding: 0 20px;
+   color: white;
+   background: linear-gradient(rgb(209, 43, 1), crimson, rgb(255, 0, 0));
+   text-decoration: none;
+}
+
+.nav-link.p-0.text {
+   font-size: 15px;
+   text-decoration: none;
+   color: rgb(209, 209, 209);
+}

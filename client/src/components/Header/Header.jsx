@@ -1,9 +1,10 @@
-import React from 'react'
-import {AiOutlineShoppingCart, AiOutlineUser} from 'react-icons/ai';
+import React, { useState } from 'react'
+import { AiOutlineShoppingCart, AiOutlineUser } from 'react-icons/ai';
 import { Link } from 'react-router-dom';
 import './Header.css';
 
 const Header = () => {
+
   return (
     <>
       <div className="navbar-container">
@@ -21,12 +22,12 @@ const Header = () => {
             </div>
           </div>
           <div className="navbar-right">
-              <AiOutlineUser className='navbar-userIcon' />
-              <Link to='/cart' className='navbar-cartContainer'>
-                <AiOutlineShoppingCart className='navbar-cartIcon' />
-                <div className="navbar-cartQuantity">0</div>
-              </Link>
-              <button className="navbar-logout">Logout</button>
+            <AiOutlineUser className='navbar-userIcon' />
+            <Link to='/cart' className='navbar-cartContainer'>
+              <AiOutlineShoppingCart className='navbar-cartIcon' />
+              <div className="navbar-cartQuantity">0</div>
+            </Link>
+            <button className="navbar-logout">Logout</button>
           </div>
         </div>
       </div>

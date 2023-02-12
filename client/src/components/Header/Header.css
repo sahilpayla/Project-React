@@ -1,12 +1,15 @@
 .navbar-container {
    width: 100%;
-   border-bottom: 1px solid gray;
+   background-color: rgb(255, 255, 255);
+   border-bottom: 1px solid rgb(236, 236, 236);
    height: 60px;
    position: fixed;
    top: 0;
    left: 0;
 }
-
+a{
+   text-decoration: none;
+}
 .navbar-wrapper {
    width: 85%;
    height: 100%;
@@ -22,7 +25,7 @@
 }
 
 .navbar-title {
-   color: red;
+   color: crimson;
    font-size: 28px;
    font-weight: bold;
 }
