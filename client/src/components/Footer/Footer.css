@@ -2,12 +2,46 @@
    width: 100%;
    padding: 0 20px;
    color: white;
-   background: linear-gradient(rgb(209, 43, 1), crimson, rgb(255, 0, 0));
+   background: linear-gradient(rgba(255, 0, 43, 0.747), rgb(185, 1, 32), crimson);
    text-decoration: none;
 }
-
+.nav-item.mb-2{
+   color: white;
+}
+.row{
+   justify-content: space-evenly;
+   display: flex;
+}
 .nav-link.p-0.text {
    font-size: 15px;
    text-decoration: none;
-   color: rgb(209, 209, 209);
+   transition: 150ms ease-in-out;
+   color: rgb(255, 255, 255);
+}
+.nav-link.p-0.text:hover {
+   font-size: 15px;
+   text-decoration: none;
+   color: rgba(255, 255, 255, 0.384);
+   letter-spacing: 12px;
+   cursor:pointer;
+}
+.footer-company{
+   display: flex;
+   width: 100%;
+   justify-content: space-evenly;
+   /* background-color: lime; */
+}
+.footer-flex{
+   justify-content: flex-end;
+   display: flex;
+   align-items: center;
+}
+.footer-navbar-brand{
+   /* background-color: black; */
+   width: 10%;
+}
+.footer-navbar-brand img {
+   width: 10%;
+   color: white;
+   /* background-color: white; */
 }

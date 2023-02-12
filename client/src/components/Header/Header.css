@@ -10,6 +10,9 @@
 a{
    text-decoration: none;
 }
+.navbar-title img{
+   width: 10%;
+}
 .navbar-wrapper {
    width: 85%;
    height: 100%;

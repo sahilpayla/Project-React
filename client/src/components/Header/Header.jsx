@@ -10,7 +10,10 @@ const Header = () => {
       <div className="navbar-container">
         <div className="navbar-wrapper">
           <div className="navbar-left">
-            <Link to='/' className="navbar-title">Martin Store</Link>
+            <Link to='/' className="navbar-title">
+              <img src="https://uxwing.com/wp-content/themes/uxwing/download/food-and-drinks/food-icon.png" alt="" />
+              {" "} Martin Store
+            </Link>
           </div>
           <div className="navbar-center">
             <div className="navbar-list">
