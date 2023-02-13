@@ -16,7 +16,7 @@ const Home = () => {
         <div className="home-wrapper">
           <Hero />
           <div className="home-delivery">
-            <div className="home-titles">
+            <div className="home-titles" id='faqs'>
               <span className="home-deliverySubtitle">Delivery</span>
               <h2 className="home-deliveryTitle">Always on time for you</h2>
             </div>

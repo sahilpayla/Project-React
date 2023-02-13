@@ -5,10 +5,10 @@ import manEating from '../../assets/man-having-his-meal.svg'
 const Hero = () => {
   return (
     <>
-      <section id="home" className="hero-container">
+      <section className="hero-container">
         <div className="hero-wrapper">
           <div className="hero-left">
-            <h2 className='hero-title'>Do you crave delicious food</h2>
+            <h2 id="home"  className='hero-title'>Do you crave delicious food</h2>
             <p className='hero-firstmsg'>
               But going out to take <span>food costs time ...</span>
             </p>

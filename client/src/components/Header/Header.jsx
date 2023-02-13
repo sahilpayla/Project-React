@@ -17,11 +17,11 @@ const Header = () => {
           </div>
           <div className="navbar-center">
             <div className="navbar-list">
-              <div className="navbar-list-item"><a href="/">Home</a></div>
-              <div className="navbar-list-item"><a href="/">Contact</a></div>
-              <div className="navbar-list-item"><a href="/">Foods</a></div>
-              <div className="navbar-list-item"><a href="/">FAQs</a></div>
+              <div className="navbar-list-item"><a href="#home">Home</a></div>
+              <div className="navbar-list-item"><a href="#faqs">FAQs</a></div>
+              <div className="navbar-list-item"><a href="#foods">Foods</a></div>
               <div className="navbar-list-item"><Link to="/create">Create</Link></div>
+              <div className="navbar-list-item"><a href="#contact">Contact</a></div>
             </div>
           </div>
           <div className="navbar-right">

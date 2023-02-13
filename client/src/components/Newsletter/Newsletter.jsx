@@ -6,7 +6,7 @@ import './Newsletter.css'
 
 const Newsletter = () => {
   return (
-    <section id='contacts' className='newsletter-container'>
+    <section id='contact' className='newsletter-container'>
       <div className="newsletter-wrapper">
         <h2 className="newsletter-subtitle">Get our latest offers</h2>
         <h4 className="newsletter-title">Newsletter</h4>
