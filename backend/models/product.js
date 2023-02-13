@@ -9,19 +9,19 @@ const productSchema = new mongoose.Schema({
    desc: {
       type: String,
       required: true,
-      min: 8,
+      min: 1,
    },
    price: {
       type: Number,
       required: true,
-      min:6,
-      max:20,
+      min:0,
+      max:9999999,
    },
    img: {
       type: String,
       required: true,
-      min:6,
-      max:20,
+      min:1,
+      max:9999999,
    },
    review: {
       type: Number,
@@ -29,7 +29,7 @@ const productSchema = new mongoose.Schema({
    },
    Category: {
       type: String,
-      required: true,
+      // required: true
    },
 })
 

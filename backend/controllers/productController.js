@@ -1,7 +1,7 @@
 const productController = require('express').Router();
 const Product = require('../models/product.js');
 const { verifyToken, veriyTokenAdmin } = require('../middlewares/verifyToken');
-
+const secret = "jwtSecret"
 
 // get all
 productController.get('/', verifyToken, async (req, res) => {

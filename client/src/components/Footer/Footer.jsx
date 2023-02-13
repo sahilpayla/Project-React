@@ -45,14 +45,7 @@ const Footer = () => {
             <hr />
             <div className="footer-company">
                <p className='footer-flex'>
-                  <p>
-                     <a className="footer-navbar-brand" href="/">
-                        <img src="https://uxwing.com/wp-content/themes/uxwing/download/food-and-drinks/food-icon.png" alt="" />
-                     </a> {" "}
-                  </p>
-                  <p>
-                     © 2023 Martin Store Company, Inc. All rights reserved.
-                  </p>
+                     © 2023 Company, Inc. All rights reserved.
                </p>
             </div>
          </footer>

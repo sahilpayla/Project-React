@@ -1,7 +1,8 @@
 const uploadController = require('express').Router();
-
 const multer = require('multer');
 const { verifyToken } = require('../middlewares/verifyToken.js');
+const secret = "jwtSecret"
+
 
 const storage = multer.diskStorage({
    destination: (req, file, cb) => {

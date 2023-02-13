@@ -1,9 +1,19 @@
-import React, { useState } from 'react'
+import React from 'react'
 import { AiOutlineShoppingCart, AiOutlineUser } from 'react-icons/ai';
-import { Link } from 'react-router-dom';
+import { useDispatch } from 'react-redux';
+import { Link, useNavigate } from 'react-router-dom';
+import { logout } from '../../redux/authSlice';
 import './Header.css';
 
 const Header = () => {
+
+  const dispatch = useDispatch();
+  const navigate = useNavigate()
+
+  const handleLogout = () => {
+    dispatch(logout()) 
+    navigate('/login')
+  }
 
   return (
     <>
@@ -12,7 +22,7 @@ const Header = () => {
           <div className="navbar-left">
             <Link to='/' className="navbar-title">
               <img src="https://uxwing.com/wp-content/themes/uxwing/download/food-and-drinks/food-icon.png" alt="" />
-              {" "} Martin Store
+              {" "} Sahil Store
             </Link>
           </div>
           <div className="navbar-center">
@@ -30,7 +40,7 @@ const Header = () => {
               <AiOutlineShoppingCart className='navbar-cartIcon' />
               <div className="navbar-cartQuantity">0</div>
             </Link>
-            <button className="navbar-logout">Logout</button>
+            <button onClick={handleLogout} className="navbar-logout">Logout</button>
           </div>
         </div>
       </div>

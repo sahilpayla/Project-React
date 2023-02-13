@@ -6,6 +6,7 @@
    position: fixed;
    top: 0;
    left: 0;
+   z-index: 99;
 }
 a{
    text-decoration: none;
@@ -28,9 +29,12 @@ a{
 }
 
 .navbar-title {
-   color: crimson;
-   font-size: 28px;
+   color: rgb(0, 0, 0);
+   font-size: 20px;
    font-weight: bold;
+}
+.navbar-title:hover{
+   color: rgba(37, 37, 37, 0.658);
 }
 
 /* center */
@@ -59,7 +63,8 @@ a{
    color: indianred;
 }
 .navbar-list-item > a:hover{
-   color: #888;
+   color: #000000;
+   transform: scale(1.1);
 }
 /* right */
 .navbar-right{

@@ -1,4 +1,5 @@
 const jwt = require('jsonwebtoken');
+const secret = "jwtSecret"
 
 // verifyToken
 const verifyToken = (req, res, next) => {
@@ -7,7 +8,7 @@ const verifyToken = (req, res, next) => {
    }
 
    if (req.headers.authorization && req.headers.authorization.startsWith("Bearer ")) {
-      const token = req.headers.split(' ')[1]
+      const token = req.headers.authorization.split(' ')[1]
       jwt.verify(token, secret, (err, data) => {
          if (err) {
             return res.status(403).json({ msg: "Wrong or expired token. " })
@@ -28,7 +29,7 @@ const verifyTokenAdmin = (req, res, next) => {
    }
 
    if (req.headers.authorization && req.headers.authorization.startsWith("Bearer ")) {
-      const token = req.headers.split(' ')[1]
+      const token = req.headers.authorization.split(' ')[1]
       jwt.verify(token, secret, (err, data) => {
          if (err) {
             return res.status(403).json({ msg: "Wrong or expired token. " })
