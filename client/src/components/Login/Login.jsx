@@ -2,8 +2,9 @@ import img from '../../assets/womaneating2.jpg'
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom';
 import { useNavigate } from 'react-router-dom'
-// import { useDispatch } from 'react-redux';
+import { useDispatch } from 'react-redux';
 import './Login.css';
+import { login } from '../../redux/authSlice';
 
 
 
@@ -13,7 +14,7 @@ const Login = () => {
   const [password, setPassword] = useState("");
   const [error, setError] = useState(false);
 
-  // const dispatch = useDispatch();
+  const dispatch = useDispatch();
   const navigate = useNavigate();
 
   const handleLogin = async (e) => {
