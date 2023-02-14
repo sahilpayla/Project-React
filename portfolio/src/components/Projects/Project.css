@@ -1,0 +1,9 @@
+.project{
+   height: 100vh;
+   color: white;
+   background-color: rgb(0, 0, 0);
+}
+.project-title{
+   font-weight: bold;
+   font-size: 5vw;
+}
