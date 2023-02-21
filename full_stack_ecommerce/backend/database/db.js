@@ -11,9 +11,10 @@ const connectDatabase = () => {
          // useCreateIndex: true
       })
       .then((data) => { console.log('Connected to the db') })
-      .catch((error) => {
-         console.log(error.message)
-      })
+
+      // .catch((error) => {
+      //    console.log(error.message)
+      // })
 
 }
 
