@@ -1,7 +1,14 @@
 const express = require('express');
 const { getAllProducts } = require('./controllers/productController.js');
 const app = express();
+const cookieParser = require('cookie-parser')
+
+
 app.use(express.json());
+app.use(cookieParser());
+
+
+
 const errorMiddleware = require('./middlewares/Error.js')
 
 
